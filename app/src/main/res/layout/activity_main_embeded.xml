@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00CC00"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <com.journeyapps.barcodescanner.CompoundBarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        >
+
+    </com.journeyapps.barcodescanner.CompoundBarcodeView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        style="?android:attr/buttonBarStyle"
+        >
+
+
+        <Button
+            android:id="@+id/btnStartScan"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="25"
+            android:text="Start"/>
+
+        <Button
+            android:id="@+id/btnStopScan"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="25"
+            android:text="Stop"/>
+
+        <Button
+            android:id="@+id/btnPauseScan"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="25"
+            android:text="Pause"/>
+
+        <Button
+            android:id="@+id/btnResumeScan"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="25"
+            android:text="Resume"/>
+    </LinearLayout>
+
+</LinearLayout>
